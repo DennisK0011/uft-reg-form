@@ -1,11 +1,14 @@
 <?php
     include 'config.php';
 
-    $query = mysqli_query("INSERT INTO coach (firstName, lastName, email, clubName)
-    	VALUES ('$_POST[firstName]', '$_POST[lastName]', '$_POST[email]', '$_POST[clubName]')");
-if (!$conn->query($query)) {
-	echo "error code ({$conn->errno}): {$conn->error}";
-} else { echo "query succes"}
+$sql = "INSERT INTO coach (firstName, lastName, email, clubName)
+VALUES ('$_POST[firstName]', '$_POST[lastName]', '$_POST[email]', '$_POST[clubName]')";
+if ($conn->query($sql) === TRUE) {
+echo "New record created successfully";
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}$conn->close();
+
 
 
 ?>
