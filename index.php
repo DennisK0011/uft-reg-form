@@ -5,12 +5,12 @@
 	<link rel=”stylesheet” href=”style.css”>
 	<title>UNITED FIGHTERS TROPHY registration</title>
     <?php
-        $configs = include ('config.php')
+    //include 'config.php';
     ?>
 </head>
 
 <body>
-<form>
+<form action="send_post.php" method="post">
 	<fieldset>
         <p>
     	   <label for="firstName">Name</label>
