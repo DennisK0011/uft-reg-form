@@ -4,6 +4,9 @@
 	<meta charset=”UTF-8”>
 	<link rel=”stylesheet” href=”style.css”>
 	<title>UNITED FIGHTERS TROPHY registration</title>
+    <?php
+        $configs = include ('config.php')
+    ?>
 </head>
 
 <body>
