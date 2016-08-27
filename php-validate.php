@@ -1,6 +1,6 @@
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$fnameErr = $lnameErr = $cnameErr = $emailErr = "";
 $fname = $lname = $cname = $email = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

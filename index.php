@@ -1,5 +1,4 @@
 <?php include 'php-validate.php'; ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +8,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <form action="send_post.php" method="post">
+        <form action="add-fighters.php" method="post">
         	<fieldset>
                 <p>
             	   <label for="firstName">Name</label>
@@ -43,7 +42,8 @@
 
         <script src="js/jquery-3.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        
-        <script src="js/table.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script> $("#UFT-registration").validate(); </script>
+
     </body>
 </html>
