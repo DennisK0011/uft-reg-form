@@ -12,14 +12,15 @@
     </head>
 
     <body>
+
         <div class ="container">
             <h1>Registration</h1>
 
-                <form class="form-horizontal" action="send-form.php" method="post" >
+                <form  class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
                     <div class="form-group">
                     	<label class="control-label col-sm-2" for="firstName">Name</label>
                     	<div class="col-sm-4">
-                            <input class="form-control " type="text" id="firstName" name="firstName" value="<?php echo $fname;?>" required>
+                            <input class="form-control " type="text" id="firstName" name="firstName" value="<?php echo $fname;?>" >
                         </div>
                         <span class="error"> <?php echo $fnameErr;?></span>
                     </div>
@@ -27,7 +28,7 @@
                         <div class="form-group">
                     	   <label class="control-label col-sm-2" for="lastName">Surname</label>
                     	   <div class="col-sm-4">
-                                <input class="form-control" type="text" id="lastName" name="lastName" value="<?php echo $lname;?>" required>
+                                <input class="form-control" type="text" id="lastName" name="lastName" value="<?php echo $lname;?>" >
                             </div>
                            <span class="error"> <?php echo $lnameErr;?></span>
                         </div>
@@ -35,15 +36,15 @@
                         <div class="form-group">
                     	   <label class="control-label col-sm-2" for="clubName">club</label>
                     	   <div class="col-sm-4">
-                                <input class="form-control" type="text" id="clubName" name="clubName" value="<?php echo $cname;?>" required>
+                                <input class="form-control" type="text" id="clubName" name="clubName" value="<?php echo $cname;?>" >
                             </div>
                            <span class="error"> <?php echo $cnameErr;?></span>
                         </div>
 
                         <div class="form-group">
-                    	   <label class="control-label col-sm-2" for="mailAdress" >E-mail</label>
+                    	   <label class="control-label col-sm-2" for="email" >E-mail</label>
                     	   <div class="col-sm-4">
-                                <input class="form-control" type="email" id="mailAdress" name="mailAdress" value="<?php echo $email;?>" required>
+                                <input class="form-control" type="email" id="email" name="email" value="<?php echo $email;?>" >
                             </div>
                            <span class="error"> <?php echo $emailErr;?></span>
                         </div>

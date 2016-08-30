@@ -7,7 +7,6 @@
         <title>UFT registration</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel=”stylesheet” href=”css/style.css”>
-        
     </head>
 
     <body>
