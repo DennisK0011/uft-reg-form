@@ -1,4 +1,7 @@
-<?php include 'php-validate.php'; ?>
+<?php 
+    //error_reporting(E_ALL);
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +19,11 @@
         <div class ="container">
             <h1>Registration</h1>
 
-                <form  class="form-horizontal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
+                <form  class="form-horizontal" action="add-fighters.php" method="post" >
                     <div class="form-group">
                     	<label class="control-label col-sm-2" for="firstName">Name</label>
                     	<div class="col-sm-4">
-                            <input class="form-control " type="text" id="firstName" name="firstName" value="<?php echo $fname;?>" >
+                            <input class="form-control " type="text" id="firstName" name="firstName" value="<?php echo $firstName;?>" >
                         </div>
                         <span class="error"> <?php echo $fnameErr;?></span>
                     </div>
@@ -28,7 +31,7 @@
                         <div class="form-group">
                     	   <label class="control-label col-sm-2" for="lastName">Surname</label>
                     	   <div class="col-sm-4">
-                                <input class="form-control" type="text" id="lastName" name="lastName" value="<?php echo $lname;?>" >
+                                <input class="form-control" type="text" id="lastName" name="lastName" value="<?php echo $lastName;?>" >
                             </div>
                            <span class="error"> <?php echo $lnameErr;?></span>
                         </div>
@@ -36,7 +39,7 @@
                         <div class="form-group">
                     	   <label class="control-label col-sm-2" for="clubName">club</label>
                     	   <div class="col-sm-4">
-                                <input class="form-control" type="text" id="clubName" name="clubName" value="<?php echo $cname;?>" >
+                                <input class="form-control" type="text" id="clubName" name="clubName" value="<?php echo $clubName;?>" >
                             </div>
                            <span class="error"> <?php echo $cnameErr;?></span>
                         </div>

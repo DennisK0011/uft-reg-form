@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
 $fnameErr = $lnameErr = $cnameErr = $emailErr = "";
-$fname = $lname = $cname = $email = "";
+$firstName = $lastName = $clubName = $email  = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["firstName"])) {
